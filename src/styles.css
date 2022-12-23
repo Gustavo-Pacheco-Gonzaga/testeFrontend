@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    color: #1D2B3A;
+    font-family: 'arial';
+    box-sizing: border-box;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+body {
+    max-width: 390px;
+    width: 390px;
+    max-height: 850px;
+    height: 850px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.content-center{
+    align-items: center;
+}
+
+.font-white {
+    color: white;
+}
+
+::placeholder{
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+}
+
+.font-gray {
+    color: #808891;
+}
+
+.font-bold {
+    font-weight: 900;
+}
+
+.font-upper{
+    text-transform: uppercase;
+}
+
+.font-sublinhado{
+    text-decoration: underline;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.lot-radius {
+    border-radius: 100px;
+}
+
+.f-12{
+    letter-spacing: 1px;
+    font-size: 14px;
+}

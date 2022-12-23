@@ -1,14 +1,15 @@
-<section class="background flex column">
+<section id="background" class="flex column ">
+    <div id="img"></div>
     <div id="logo">
-        <a href=""><img src="" alt=""></a>
+        <a routerLink="login"></a>
     </div>
     <div id="form" class="flex column">
-        <form class="flex column" [formGroup]="formLogin">
-            <input type="text" [class.input-error]="erro.usuario" placeholder="Usuário" formControlName="usuario">
-            <input type="password" placeholder="Senha" [class.input-error]="erro.senha" formControlName="senha">
+        <form class="flex column content-center" [formGroup]="formLogin">
+            <input type="text" class="lot-radius" [class.input-error]="erro.usuario" placeholder="Usuário" formControlName="usuario">
+            <input type="password" class="lot-radius" placeholder="Senha" [class.input-error]="erro.senha" formControlName="senha">
         </form>
-        <a routerLink="" class="text-left">Esqueci minha senha</a>
-        <button [disabled]="formLogin.invalid" (click)="Login()">Entrar</button>
+        <a routerLink="login" class="text-left font-white font-sublinhado f-12">Esqueci minha senha</a>
+        <button class="lot-radius font-white font-upper font-bold" [disabled]="formLogin.invalid" (click)="Login()">Entrar</button>
     </div>
-    <a routerLink="" class="text-center">Ainda não tem cadastro? <span class="bold">Criar conta</span></a>
+    <a routerLink="login" class="text-center font-white font-sublinhado f-12">Ainda não tem cadastro? <span class="font-white font-bold">Criar conta</span></a>
 </section>

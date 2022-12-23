@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { NovasRotasModule } from './novas-rotas/novas-rotas.module';
+import { NovasRotasModule } from './novas-rotas.module';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { NovasRotasModule } from './novas-rotas/novas-rotas.module';
     ReactiveFormsModule,
     RouterModule,
     CommonModule,
+    HttpClientModule,
     NovasRotasModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

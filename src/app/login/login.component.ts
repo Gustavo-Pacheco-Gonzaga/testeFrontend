@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   Login(){
-    return this.r.navigate(['/inicio']);
+    return this.r.navigate(['inicio']);
   }
 
 }

@@ -1,0 +1,62 @@
+#background {
+    background: #1d2b3a;
+    max-width: 390px;
+    width: 390px;
+    max-height: 850px;
+    height: 850px;
+    padding: 40px;
+}
+
+#img{
+    background-image: url('/assets/logo-fundo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    scale: .8;
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    right: -150px;
+    display: flex;
+}
+
+#logo{
+    margin-top: 115px;
+    width: 100%;
+    height: 180px;
+}
+
+#logo a{
+    background-image: url('/assets/logo.png');
+    scale: .85;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-33%);
+    height: 100%;
+    display: flex;
+}
+
+#form{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 55px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+#form a{
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background: #c61d35;
+    letter-spacing: 1px;
+    margin-bottom: 160px;
+}

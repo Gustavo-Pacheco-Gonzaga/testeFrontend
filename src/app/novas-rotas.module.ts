@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 const rotas = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
-  {}
 ];
 
 @NgModule({
