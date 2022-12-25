@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  formBuscar: any;
+  error: any
 
-  ngOnInit(): void {
+  constructor(
+    public fb: FormBuilder,
+    public r: Router
+  ) { }
+
+  ngOnInit() {
+    this.formBuscar = this.fb.group({
+      buscar: ['', Validators.required]
+    })
+  }
+
+  openFiltrar(){
+
+  }
+
+  buscar(){
+    
   }
 
 }

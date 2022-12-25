@@ -9,10 +9,20 @@
     color: #1D2B3A;
     font-family: 'arial';
     box-sizing: border-box;
+    list-style: none;
+}
+
+.background {
+    width: 390px;
+    max-width: 390px !important;
+    height: 850px;
+    max-height: 850px !important;
+    padding: 40px;
 }
 
 a, button{
     cursor: pointer;
+    z-index: 2;
 }
 
 body {
@@ -32,6 +42,10 @@ body {
 
 .content-center{
     align-items: center;
+}
+
+.flex-center{
+    justify-content: space-between;
 }
 
 .font-white {

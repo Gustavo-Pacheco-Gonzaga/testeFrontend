@@ -1,1 +1,73 @@
-<p>inicio works!</p>
+<header class="flex column">
+    <img src="" alt="">
+    <h2 class="font-white">Olá, <span class="font-white bold">MARCOS SILVA</span></h2>
+<header>
+<section id="content" class="background">
+    <form [formGroup]="formBuscar" (ngSubmit)="buscar()">
+        <div class="flex image-button">
+            <label for="buscar">
+                <img src="" alt="">
+            </label>
+            <input type="text" name="buscar" placeholder="Buscar carro">
+        </div>
+        <div class="flex image-button" (click)="openFiltrar()">
+                <img src="" alt="">
+            <button class="font-white">Filtrar</button>
+        </div>
+    </form>
+    <div>
+        <h3 class="bold">Últimas reservas</h3>
+        <div class="flex">
+            <div class="flex column content-center">
+                <img src="" alt="">
+                <h4 class="bold"></h4>
+                <p class="font-gray"></p>
+                <p class="font-gray"></p>
+                <p class="font-gray"></p>
+            </div>
+        </div>
+    </div>
+    <button class="lot-radius flex">
+        <img src="" alt="">
+        <p class="font-white">Acessar por <span class="font-white bold">QR code</span></p>
+    </button>
+</section>
+
+<footer>
+    <ul class="flex flex-center">
+        <li>
+            <a routerLink="inicio">
+                <img src="" alt="">
+                <p class="font-upper">início</p>
+            </a>
+        </li>
+        <li>
+            <a routerLink="inicio">
+                <img src="" alt="">
+                <p class="font-upper">meus agendamentos</p>
+            </a>
+        </li>
+        <li>
+            <a routerLink="inicio">
+                <img src="" alt="">
+                <p class="font-upper">central</p>
+            </a>
+        </li>
+        <li>
+            <a routerLink="inicio">
+                <img src="" alt="">
+                <p class="font-upper">perfil</p>
+            </a>
+        </li>
+    </ul>
+
+</footer>
+
+<section id="filtrar">
+    <div>
+        <div class="flex">
+            <img src="" alt="">
+            <input type="text" placeholder="BUSCA">
+        </div>
+    </div>
+</section>
