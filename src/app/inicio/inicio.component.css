@@ -1,3 +1,263 @@
-button{
+#background {
+    width: 390px;
+    max-width: 390px !important;
+    min-height: 850px;
+    max-height: 850px !important;
+    overflow: hidden;
+}
+
+header {
+    width: 390px;
+    max-width: 390px;
+    height: 360px;
+    overflow: hidden;
+    background-color: #1d2b3a;
+    position: absolute;
+}
+
+#background-img {
+    object-fit: cover;
+    width: 100%;
+    height: 360px;
+    object-position: -410px 0;
+}
+
+header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div img {
+    width: 100px;
     background: #1d2b3a;
+    border: solid 2px #c61d35;
+    border-radius: 100%;
+    object-position: 0 17px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 335px 30px 0 30px;
+}
+
+.image-button {
+    background: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 8px -3px #959595;
+    z-index: 3;
+    margin-bottom: 50px;
+}
+
+.image-button:first-child {
+    width: 205px;
+    margin-right: 10px;
+}
+
+.image-button:last-child {
+    cursor: pointer;
+    transition: all .2s
+}
+
+.image-button:last-child:hover {
+    background: whitesmoke;
+}
+
+.image-button img {
+    margin-right: 10px;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 140px;
+    overflow: hidden;
+    padding: 7px 20px 10px 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 8px -3px #959595;
+    margin-bottom: 30px;
+    height: 160px;
+}
+
+.card:first-child {
+    margin-right: 20px;
+}
+
+.card img {
+    justify-self: flex-start;
+    width: 115%;
+    height: 65px;
+}
+
+.card:first-child img {
+    width: 90%;
+}
+
+button {
+    padding: 17px;
+    justify-content: center;
+    width: 100%;
+    background: #1d2b3a;
+    transition: all .4s;
+    border: none;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    transform: scale(1.01);
+    background: #192531;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px 30px;
+    box-shadow: 0px -3px 15px -10px #545454;
+    ;
+}
+
+/* Filtro */
+
+#filtrar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 0;
+}
+
+#filtrar #buscar-div {
+    width: 100%;
+    height: 200px;
+    background: #1d2b3a;
+}
+
+#filtrar #buscar-div textarea {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d2b3a;
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    resize: none;
+}
+
+#filtrar #buscar-div div {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#filtrar #buscar-div div img {
+    margin-right: 10px;
+}
+
+#filtrar h2 {
+    background-color: #f8f6f6;
+    padding: 15px 40px 8px 40px;
+    width: 100%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#filtrar h2::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-bottom: solid 2px #c61d35;
+    border-right: solid 2px #c61d35;
+    transform: rotate(45deg);
+    right: 40px;
+}
+
+#types-div-inputs {
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 0 40px;
+}
+
+.input-type {
+    margin-bottom: 5px;
+}
+
+.input-type-mark {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #1d2b3a;
+    background: #f6f5f4;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.type-active::before {
+    content: '';
+    margin-bottom: 4px;
+    margin-left: 3px;
+    width: 9px;
+    height: 9px;
+    background: #c61d35;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+}
+
+#engine-div-inputs,
+#size-div-inputs {
+    margin-bottom: 15px;
+    padding: 0 40px;
+}
+
+.input-engine,
+.input-size {
+    padding: 7px 10px;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px -5px #545454;
+    background: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.engine-active,
+.size-active {
+    background-color: #c61d35;
+    color: white;
+}
+
+#filtrar-button {
+    box-shadow: 0 -3px 10px -10px #545454;
+    padding: 20px 40px;
+}
+
+/* Resultado */
+
+#resultado{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 390px;
+    padding: 20px;
+    background: #1d2b3a;
+}
+#resultado p{
+    margin: 10px;
 }

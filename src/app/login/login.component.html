@@ -5,11 +5,11 @@
     </div>
     <div id="form" class="flex column">
         <form class="flex column content-center" [formGroup]="formLogin">
-            <input type="text" class="lot-radius" [class.input-error]="erro.usuario" placeholder="Usuário" formControlName="usuario">
-            <input type="password" class="lot-radius" placeholder="Senha" [class.input-error]="erro.senha" formControlName="senha">
+            <input type="text" class="lot-radius"  placeholder="Usuário" formControlName="usuario">
+            <input type="password" class="lot-radius" placeholder="Senha" formControlName="senha">
         </form>
-        <a routerLink="" class="text-left font-white font-sublinhado f-12">Esqueci minha senha</a>
-        <button class="lot-radius font-white font-upper font-bold" [disabled]="formLogin.invalid" (click)="Login()">Entrar</button>
+        <a routerLink="" class="text-left font-white font-sublinhado font-thin f-14">Esqueci minha senha</a>
+        <button class="lot-radius font-white font-upper font-bold" (click)="Login()">Entrar</button>
     </div>
-    <a routerLink="" class="text-center font-white font-sublinhado f-12">Ainda não tem cadastro? <span class="font-white font-bold">Criar conta</span></a>
+    <a routerLink="" class="text-center font-white font-sublinhado font-thin f-14">Ainda não tem cadastro? <span class="font-white font-bold">Criar conta</span></a>
 </section>
